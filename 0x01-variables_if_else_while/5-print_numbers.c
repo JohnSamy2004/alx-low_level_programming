@@ -3,9 +3,9 @@
 /**
  * main - Entry point
  *
- * Description: print all single digit numbers
+ * Description: print all single numbers
  *
- * Reutrni: ALways 0 (Success)
+ * Return: ALways 0 (Success)
 */
 
 int main(void)
@@ -14,9 +14,10 @@ int main(void)
 
 	while (j <= 9)
 	{
-		printf("%d", j);
+		printf("%i", j);
 		j++;
 	}
+	printf("\n");
 
 	return (0);
 }
