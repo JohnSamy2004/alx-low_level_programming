@@ -3,16 +3,16 @@
 /**
  * main - Entry point
  *
- * Description: prints all single digit numbers 
+ * Description: print all single digit numbers
  *
- * Reutrni: ALways 0 (success)
+ * Reutrni: ALways 0 (Success)
 */
 
 int main(void)
 {
 	int j = 0;
 
-	while (j <= 10)
+	while (j <= 9)
 	{
 		printf("%d", j);
 		j++;
