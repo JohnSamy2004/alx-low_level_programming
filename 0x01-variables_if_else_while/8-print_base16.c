@@ -14,11 +14,11 @@ int main(void)
 	while (j <= 102)
 	{
 		putchar(j);
-		
+		j++;
 
 		if (j == 57)
 		{
-			j = j + 39;
+			j += 39;
 			j++;
 
 		}
