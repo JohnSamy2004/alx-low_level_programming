@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Description: prints all the numbers of base 16 in lowercase
+ *
+ * Return: 0 (success)
+*/
+int main(void)
+{
+	int j = 48;
+
+	while (j <= 102)
+	{
+		putchar(j);
+		j++;
+
+		if (j == 57)
+		{
+			j = j + 39;
+			j++;
+
+		}
+	}
+
+	putchar('\n');
+	return (0);
+}
