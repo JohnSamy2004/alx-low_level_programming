@@ -5,7 +5,7 @@
  *
  * Description: prints all the numbers of base 16 in lowercase
  *
- * Return: 0 (success)
+ * Return: Always 0 (Success)
 */
 int main(void)
 {
@@ -14,7 +14,6 @@ int main(void)
 	while (j <= 102)
 	{
 		putchar(j);
-
 
 		if (j == 57)
 		{
