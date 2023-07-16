@@ -23,9 +23,9 @@ int main(void)
 			{
 				if (num1 != num2 && num1 < num2 && num2 != num3 && num2 < num3)
 				{
-					putchar(num1 + '0');
-					putchar(num2 + '0');
-					putchar(num3 + '0');
+					putchar(num1);
+					putchar(num2);
+					putchar(num3);
 
 					if (num1 + num2 + num3 != 24)
 					{
