@@ -27,11 +27,6 @@ int main(void)
 					putchar(num2);
 					putchar(num3);
 
-					if (num1 + num2 + num3 != 171)
-					{
-						putchar(',');
-						putchar(' ');
-					}
 				}
 			}
 			num3++;
