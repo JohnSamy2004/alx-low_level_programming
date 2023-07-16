@@ -13,7 +13,7 @@ int main(void)
 
 	while (kn <= 9)
 	{
-		 km = 0;
+		km = 0;
 
 		while (km <= 9)
 
