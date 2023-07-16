@@ -10,35 +10,31 @@
 
 int main(void)
 {
-	int num1 = '0', num2 = '0', num3 = '0';
+	int a, b, c;
 
-	while (num1 <= '7')
+	for (a = 0; a < 8; a++)
 	{
-
-		while (num2 <= '8')
+		for (b = a + 1; b < 9; b++)
 		{
-
-			while (num3 <= '9')
+			for (c = b  + 1; c < 10; c++)
 			{
-				if (num1 < num2 && num2 < num3)
-				{
-					putchar(num1);
-					putchar(num2);
-					putchar(num3);
+				putchar((a % 10) + '0');
+				putchar((b % 10) + '0');
+				putchar((c % 10) + '0');
 
-				if (num1 != '7')
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				if (a == 7 && b == 8 && c == 9)
+					continue;
 
-				}
+
+				putchar(',');
+				putchar(' ');
+
 			}
-			num3++;
+
 		}
-		num2++;
-	}
-	num1++;
+
+	}	
+
 
 	putchar('\n');
 
