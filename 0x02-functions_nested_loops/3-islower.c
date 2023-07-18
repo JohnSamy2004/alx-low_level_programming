@@ -1,10 +1,13 @@
 #include "main.h"
 
 /**
- * _islower - jdijidjisdjij j ofjkojdcki
+ * _islower - jdijidjisdjij j ofjkojdck jfiji
+ * ljkfdkifjikjfki fjhjuhi
  *
- * Return: return 1 if alphabets in lowercase
- * return 0 if otherwise
+ * @c: jdiijhdiuj nfdujhunh jhu
+ *
+ * Return: return 1 if 'c' in lowercase
+ *	return 0 if otherwise
 */
 
 int _islower(int c)
