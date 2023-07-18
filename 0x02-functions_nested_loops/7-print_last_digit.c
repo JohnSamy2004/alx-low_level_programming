@@ -18,6 +18,6 @@ int print_last_digit(int r)
 	else
 		lastdigit = r % 10;
 
-	_putchar(lastdigit + '0')
+	_putchar(lastdigit + '0');
 
 	return (lastdigit);
