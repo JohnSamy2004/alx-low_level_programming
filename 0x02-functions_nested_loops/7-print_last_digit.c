@@ -21,3 +21,4 @@ int print_last_digit(int r)
 	_putchar(lastdigit + '0');
 
 	return (lastdigit);
+}
