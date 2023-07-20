@@ -1,17 +1,18 @@
 #include "main.h"
-/**
-* print_numbers - multiplies two integers
-*
-* Return: void
-*/
-void print_numbers(void);
-{
-	char a;
 
-	for (a = '0'; a <= '9'; a++)
+/**
+*print_numbers - print 0123456789
+* owned by Bwave ICT
+*Return: void
+*/
+
+void print_numbers(void)
+{
+	char c;
+
+	for (c = '0'; c <= '9'; c++)
 	{
-		_putchar(a);
+	_putchar(c);
 	}
 	_putchar('\n');
-
 }
