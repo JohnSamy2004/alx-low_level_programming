@@ -4,7 +4,7 @@
 * more_numbers - prints
 * owned by Bwave ICT
 *
-* Return: void
+* Return: no return
 */
 
 void more_numbers(void)
