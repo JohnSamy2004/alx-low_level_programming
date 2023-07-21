@@ -5,29 +5,26 @@
  *
  * Description: prints the numbers 1 - 100 w/
  * Fizz for multiples of 3, Buzz for multiples of 5,
- * and FizzBuzz for multiples of both
+ * and FizzBuzz for multiples of 
  *
  * Return: always 0
 */
 
 int main(void)
 {
-	int i;
+    int i;
+    for(i=1; i<=100; i++)
+    {
+        if(((i%3)||(i%5))== 0)
+            printf("number= %d FizzBuzz\n", i);
+        else if((i%3)==0)
+            printf("number= %d Fizz\n", i);
+        else if((i%5)==0)
+            printf("number= %d Buzz\n", i);
+        else
+            printf("number= %d\n",i);
 
-	for (i = 1; i <= 100; i++)
-	{
-		if (i % 15 == 0)
-			printf("FizzBuzz");
-		else if (i % 3 == 0)
-			printf("Fizz");
-		else if (i % 5 == 0)
-			printf("Buzz");
-		else
-			printf("%i", i);
-		if (i < 100)
-			printf(" ");
-	}
-	printf("\n");
+    }
 
-	return (0);
+    return 0;
 }
