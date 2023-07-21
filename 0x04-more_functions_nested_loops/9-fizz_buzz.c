@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - kfdj fdjkhihfih jjdij nkjd
+ * main - Entry point
  *
  * Description: Fizz Buzz bla bla bla
  *
