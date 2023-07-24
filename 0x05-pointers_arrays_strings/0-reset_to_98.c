@@ -4,7 +4,7 @@
  * reset_to_98 - sodhsdih chhdhhjkjis
  * dskdkkilbb jlflajf jflks
  *
- * @n; kfnnduhrufhfdwkl nwnwjf fwjnw
+ * @n: kfnnduhrufhfdwkl nwnwjf fwjnw
  *
  * Return: no return
 */
