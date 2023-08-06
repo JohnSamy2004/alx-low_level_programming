@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strstr - dskhfdsiujhbb gdsujhh
+ * _strstr - dskhfdsiujhbb gdsujhh
  *
  * @haystack: ijdcujh
  * @needle: dkfnj njhb d
