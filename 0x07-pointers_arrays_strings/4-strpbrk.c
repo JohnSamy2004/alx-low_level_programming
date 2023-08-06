@@ -2,10 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strpbrk - fdjifj fkdjijf fdkok
- *
- * Description: ikhfdihuih fkdjhjfdhh hfdjh
- *
+ * _strpbrk - fdjifj fkdjijf fdko
  * @s: nfsdjnj hfdsuuh fji
  * @accept: fgnjbbb b fhdujbjb j
  *
