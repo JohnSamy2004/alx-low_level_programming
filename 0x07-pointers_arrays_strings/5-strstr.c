@@ -1,14 +1,12 @@
 #include "main.h"
 
 /**
- * _strstr - dskhfdsiujhbb gdsujhh
+ * _strstr - prints the consecutive caracters of s1 that are in s2.
+ * @haystack: source string
+ * @needle: searching string
  *
- * @haystack: ijdcujh
- * @needle: dkfnj njhb d
- *
- * Return: pointer
+ * Return: new string.
  */
-
 char *_strstr(char *haystack, char *needle)
 {
 	while (*haystack)
@@ -25,7 +23,7 @@ char *_strstr(char *haystack, char *needle)
 	return (0);
 }
 /**
- * coincidence - define string b is inside a.
+ * coincidence - define if the string b is inside a.
  * @a: source string
  * @b: string to be searched
  *
