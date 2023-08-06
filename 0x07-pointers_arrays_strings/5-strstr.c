@@ -11,15 +11,35 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i, j;
-
-	for (i = 0; haystack[i] != '\0'; i++)
+	while (*haystack)
 	{
-		for (j = 0; needle[j] != haystack[i]; j++)
+		if ((*haystack == *needle && coincidence(haystack, needle) == 1) || !*needle)
 		{
-			if (needle[j] == haystack[i])
-				return (haystack++);
+			return (haystack);
+		}
+		else
+		{
+			haystack++;
 		}
 	}
 	return (0);
+/**
+ * coincidence - defin ring b is inside a.
+ * @a: source string
+ * @b: string to be searched
+ *
+ * Return: 1 if there is coincidence, otherwise 0.
+ */
+int coincidence(char *a, char *b)
+{
+	while (*b && *b == *a)
+	{
+		b++;
+		a++;
+	}
+
+	if (*b == '\0')
+		return (1);
+	else
+		return (0);
 }
