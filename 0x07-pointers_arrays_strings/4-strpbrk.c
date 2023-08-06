@@ -1,12 +1,14 @@
 #include "main.h"
 
 /**
- * *_strbrk - fdjifj fkdjijf fdkok
+ * _strpbrk - fdjifj fkdjijf fdkok
+ *
+ * Description: ikhfdihuih fkdjhjfdhh hfdjh
  *
  * @s: nfsdjnj hfdsuuh fji
  * @accept: fgnjbbb b fhdujbjb j
  *
- * Return: pointer
+ * Return: new string
  */
 
 char *_strpbrk(char *s, char *accept)
@@ -19,14 +21,14 @@ char *_strpbrk(char *s, char *accept)
 	{
 		j = 0
 		while (accept[j] != '\0')
-	       {
-		       if (accept[j] == s[i])
-		       {
+		{
+			if (accept[j] == s[i])
+			{
 				p = &s[i];
 				return (p);
-		       }
-		       j++;
-	       }
+			}
+			j++;
+		}
 		i++;
 	}
 	return (0);
