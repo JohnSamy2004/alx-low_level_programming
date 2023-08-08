@@ -1,12 +1,5 @@
 #include "main.h"
 
-/**
- * _sqrt_recursion - sdjhih duhudsh uhuhuhu
- *
- * @n: fheuhuh hfug ughuh
- *
- * Return:  On success 1.
- */
 
 int sqrt2(int mm, int result);
 
@@ -31,7 +24,13 @@ int sqrt2(int mm, int result)
 	else
 		return (-1);
 }
-
+/**
+ * _sqrt_recursion - dsbajkhsbj dshgjgjhksa
+ *
+ * @n: jfhuhueh hufeuh
+ *
+ * Return: On success 1.
+ */
 int _sqrt_recursion(int n)
 {
 	return (sqrt2(n, 1));
