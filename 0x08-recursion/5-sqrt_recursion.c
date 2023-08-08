@@ -1,8 +1,5 @@
 #include "main.h"
 
-
-int sqrt2(int mm, int result);
-
 /**
  * sqrt2 - duhuhuh ygygy
  *
@@ -12,7 +9,7 @@ int sqrt2(int mm, int result);
  * Return: On success 1.
  */
 
-
+int sqrt2(int mm, int result);
 int sqrt2(int mm, int result)
 {
 	if (result * result = mm)
@@ -20,7 +17,9 @@ int sqrt2(int mm, int result)
 		return (result);
 	}
 	else if (result * result  < mm)
+	{
 		return (sqrt2(mm, result + 1));
+	}
 	else
 		return (-1);
 }
