@@ -25,4 +25,4 @@ int sqrt2(int mm, int result)
 
 int _sqrt_recursion(int n)
 {
-	return (sqrt2(mm, 1));
+	return (sqrt2(n, 1));
