@@ -12,7 +12,7 @@
 int sqrt2(int mm, int result);
 int sqrt2(int mm, int result)
 {
-	if (result * result = mm)
+	if (result * result == mm)
 	{
 		return (result);
 	}
