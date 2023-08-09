@@ -1,8 +1,7 @@
 #include "main.h"
 
-
 /**
- * palind2 - obthfgfygfyains lengtvhgvhgvhgyhh of a
+ * palind2 - obtains length of a
  * @a: string
  * @l: integer to count length
  *
@@ -24,7 +23,8 @@ int palind2(char *a, int l)
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-int palind3(char *a, int )
+int palind3(char *a, int l)
+{
 	if (*a != *(a + l))
 		return (0);
 	else if (*a == 0)
