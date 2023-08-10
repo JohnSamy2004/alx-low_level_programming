@@ -13,9 +13,10 @@
 int main(int argc, char **argv)
 {
 	int mult = 0;
+	char c[] = "Error";
+
 	if (argc != 3)
 	{
-		char c[] = "Error";
 		printf("%s\n", c);
 
 		return (1);
