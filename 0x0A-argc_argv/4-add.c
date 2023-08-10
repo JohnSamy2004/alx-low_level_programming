@@ -20,8 +20,10 @@ int main(int argc, char *argv[])
 	{
 		for (letter = argv[argc]; *letter; letter++)
 			if (*letter < 48 || *letter > 57)
+			{
 				printf("%s\n", c);
 				return (1);
+			}
 		sum += atoi(argv[argc]);
 	}
 
