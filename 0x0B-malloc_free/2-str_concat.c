@@ -38,7 +38,7 @@ char *str_concat(char *s1, char *s2)
 	if (ghg != NULL)
 	{
 		strcpy(ghg, s1);
-		strcpy(ghg + i, s2);
+		strcpy(ghg + i + 1, s2);
 	}
 
 	return (ghg);
