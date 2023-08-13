@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * *strdup - hi bub
- *
+ * *_strdup - hi bub
+ * Description: jeijdij dh7eh7 d7y7y
  * @str: hiehdihu
  *
- * Return: pointer
+ * Return: 0
  */
 
 char *_strdup(char *str)
 {
-	int i; int size;
+	int i, size;
 	char *m;
 
 	if (str == NULL)
