@@ -29,7 +29,7 @@ char *str_concat(char *s1, char *s2)
 
 	ghg = malloc((i + v + 1) * sizeof(char));
 
-	if (ghg == 0)
+	if (ghg == NULL)
 	{
 		free(ghg);
 		return (NULL);
