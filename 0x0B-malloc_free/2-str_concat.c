@@ -13,7 +13,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	int i;
-	int v;
+	int v, k, n;
 	char *ghg;
 
 	if (s1 == NULL)
@@ -35,10 +35,12 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-	if (ghg != NULL)
+	for (k = 0; k < i; k++)
+		ghg[k] = s1[k];
+
+	for (n = 0; n <= v; n++)
 	{
-		strcpy(ghg, s1);
-		strcpy(ghg + i + 1, s2);
+		ghg[k] = s2[v];
 	}
 
 	return (ghg);
