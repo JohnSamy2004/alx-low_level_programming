@@ -27,7 +27,7 @@ char *create_array(unsigned int size, char c)
 		puts("failed to allocate memory");
 		return (NULL);
 	}
-	
+
 	for (i = 0; i < size; i++)
 		vol[i] = c;
 
