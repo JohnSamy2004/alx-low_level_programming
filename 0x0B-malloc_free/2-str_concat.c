@@ -17,9 +17,9 @@ char *str_concat(char *s1, char *s2)
 	char *ghg;
 
 	for (i = 0; s1 != NULL; i++)
-		s1[i];
+		s1[i] = i + 1;
 	for (v = 0; s2 != NULL; v++)
-		s2[v];
+		s2[v] = v + 1;
 
 	ghg = malloc(i + v + 1 * sizeof(char));
 
