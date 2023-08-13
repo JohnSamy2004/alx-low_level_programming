@@ -37,9 +37,9 @@ char *str_concat(char *s1, char *s2)
 
 	for (k = 0; k < i; k++)
 		ghg[k] = s1[k];
-	
+
 	limit = v;
-	for (v = 0; v <= limit; k++, v++ )
+	for (v = 0; v <= limit; k++, v++)
 	{
 		ghg[k] = s2[v];
 	}
