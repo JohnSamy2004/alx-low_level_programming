@@ -30,7 +30,7 @@ char *str_concat(char *s1, char *s2)
 	ghg = malloc((i + v + 1) * sizeof(char));
 	
 	if (ghg == 0)
-		return (0);
+		return (NULL);
 
 	if (ghg != NULL)
 	{
