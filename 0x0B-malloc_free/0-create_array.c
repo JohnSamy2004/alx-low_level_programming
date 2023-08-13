@@ -18,6 +18,7 @@ char *create_array(unsigned int size, char c)
 	if (vol == 0)
 	{
 		puts("failed to allocate memory");
+		return (0);
 	}
 
 	else
