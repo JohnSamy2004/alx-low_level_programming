@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * *argstostr - dijei nincinri
  *
@@ -8,8 +7,6 @@
  *
  * Return: pointer
  */
-
-
 char *argstostr(int ac, char **av)
 {
 	char *aout;
@@ -28,7 +25,6 @@ char *argstostr(int ac, char **av)
 			c++;
 		c++;
 	}
-
 	aout = malloc((c + 1) * sizeof(char));
 
 	if (aout == NULL)
@@ -36,7 +32,6 @@ char *argstostr(int ac, char **av)
 		free(aout);
 		return (NULL);
 	}
-
 	for (i = j = ia = 0; ia < c; j++, ia++)
 	{
 		if (av[i][j] == '\0')
@@ -50,7 +45,6 @@ char *argstostr(int ac, char **av)
 			aout[ia] = av[i][j];
 	}
 	aout[ia] = '\0';
-
 	return (aout);
 
 }
