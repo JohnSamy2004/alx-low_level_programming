@@ -11,7 +11,7 @@
 
 void *malloc_checked(unsigned int b)
 {
-	int *array = malloc;
+	int *array = malloc(b);
 
 	if (array == 0)
 		exit(98);
