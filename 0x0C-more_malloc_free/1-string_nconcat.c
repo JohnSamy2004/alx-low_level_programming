@@ -20,12 +20,17 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == 0)
 		s2 = "";
-	if (n >= fg)
+
+	int fg = strlen(s2);
+	int gf = strlen(s1);
+
+	if (num == 0)
+		return (0);
+
+	if (num >= fg)
 		num = n;
 
-	int fg = strlen(s1);
-
-	char *jkl = malloc(sizeof(*jkl) * fg);
+	char *jkl = malloc(sizeof(*jkl) * (gf + num + 1));
 
 	if (jkl == 0)
 		return (0);
