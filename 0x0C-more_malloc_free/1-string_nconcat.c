@@ -20,8 +20,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == 0)
 		s2 = "";
 
-	fg = strlen(s1);
-	gf = strlen(s2);
+	int fg = strlen(s1);
 
 	char *jkl = malloc(fg + n + 1);
 
