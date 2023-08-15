@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * malloc_checked - hufu4bd buebd ndeiej3idru
+ * *malloc_checked - hufu4bd buebd ndeiej3idru
  *
  * @b: jiji4jdi4jie
  *
@@ -9,7 +9,7 @@
  */
 
 
-void malloc_checked(unsigned int b)
+void *malloc_checked(unsigned int b)
 {
 	int *array;
 
