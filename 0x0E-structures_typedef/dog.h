@@ -2,7 +2,7 @@
 #define DOG_H
 
 /**
- * struct - to strucrion
+ * struct dog - to strucrion
  *
  * @name: kok
  * @age: kk
