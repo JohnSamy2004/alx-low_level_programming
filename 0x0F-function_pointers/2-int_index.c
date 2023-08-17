@@ -7,7 +7,7 @@
  * @size: difhier
  * @cmp: ijefi
  *
- * Return: -1
+ * Return: int
  */
 
 
