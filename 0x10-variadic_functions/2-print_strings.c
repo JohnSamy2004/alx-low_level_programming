@@ -24,6 +24,6 @@ p = va_arg(ab, char *);
 printf("%s", (p == 0) ? "(nil)" : p);
 }
 }
-putchar('\n');
+printf("\n");
 va_end(ab);
 }
