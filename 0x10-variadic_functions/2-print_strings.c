@@ -1,12 +1,14 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - prints numbers & new line at the end
+ * print_strings - prints numbers & new line at the end
  * @separator: string
  * @n: number of elements
+ * @...: jdrjioe
+ *
  * Return: void
  */
-void print_numbers(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 va_list ab;
 unsigned int i;
