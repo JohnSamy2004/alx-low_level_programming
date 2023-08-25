@@ -4,14 +4,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * struct lists - djijeiden ediheedj
+ * struct list_s - djijeiden ediheedj
  * @str: fkjrijrijijf
  * @len: huhurhfr efkdds
  * @next: next
  *
  */
 
-typedef struct lists
+typedef struct list_s
 {
 	char* str;
 	int len;
