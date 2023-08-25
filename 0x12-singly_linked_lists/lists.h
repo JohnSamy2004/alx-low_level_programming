@@ -5,16 +5,16 @@
 #include <stdlib.h>
 /**
  * struct lists - djijeiden ediheedj
- * @string: fkjrijrijijf
- * @length: huhurhfr efkdds
+ * @str: fkjrijrijijf
+ * @len: huhurhfr efkdds
  * @next: next
  *
  */
 
 typedef struct lists
 {
-	char* string;
-	int length;
+	char* str;
+	int len;
 	struct lists* next;
 }list_t;
 
