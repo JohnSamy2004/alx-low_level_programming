@@ -1,20 +1,24 @@
 #include "main.h"
 
-/*
- * _puts_recursion - puts using a recursion function
+/**
+ * _puts_recursion - ishdiuh bjcxzb uwgu
  *
- * @s: array of characters
+ * @s: dshjhu dgsgygds sdfgfsf
  *
  * Return: char s
  */
 
 void _puts_recursion(char *s)
 {
+
 	if (*s != '\0')
 	{
 		_putchar(*s);
 		_puts_recursion(s + 1);
 	}
 
-	_putchar('\n');
+	else
+	{
+		_putchar('\n');
+	}
 }
