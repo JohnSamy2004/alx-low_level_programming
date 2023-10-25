@@ -5,10 +5,10 @@
  *
  * @s: array of characters
  * 
- * Return: char s
+ *
  */
 
-void _puts_recrusion(char *s)
+void _puts_recursion(char *s)
 {
 	if (*s != '\0')
 	{
