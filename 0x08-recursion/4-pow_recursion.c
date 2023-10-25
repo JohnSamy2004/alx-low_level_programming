@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * _pow_recursion - power using rec
  *
  * @x: integer
