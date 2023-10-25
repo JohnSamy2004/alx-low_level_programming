@@ -4,7 +4,8 @@
  * _puts_recursion - puts using a recursion function
  *
  * @s: array of characters
- *
+ * 
+ * Return: char s
  */
 
 void _puts_recrusion(char *s)
