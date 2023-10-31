@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <stdarg.h>
 /**
  * main - main
  *
@@ -12,10 +12,11 @@
 
 int main(int argc, char *argv[])
 {
-	if (argc == 2)
-		printf("%d\n", argv[1] * argv[2]);
+	int i = atoi(argv[1]) * atoi(argv[2]);
+	if (argc == 3)
+		printf("%d\n", i);
 
-	else
+	else if (argc != 3)
 	{
 		printf("Error");
 		return (1);
