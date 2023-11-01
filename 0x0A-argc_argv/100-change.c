@@ -24,7 +24,7 @@ int main(int argc, char __attribute__((unused)) *argv[])
 	if (toi <= 0)
 	{
 		printf("0\n");
-		return (0);
+		return (1);
 	}
 
 		for (; toi >= 25; count++)
