@@ -28,7 +28,7 @@ int main(int argc, char __attribute__((unused)) *argv[])
 	}
 
 		for (; toi >= 25; count++)
-			toi= toi - 25;
+			toi = toi - 25;
 
 		for (; toi >= 10; count++)
 			toi -= 10;
