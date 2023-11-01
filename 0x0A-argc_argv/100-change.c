@@ -10,7 +10,7 @@
  * Return: 1||0
  */
 
-int main(int argc, char __attribute__((unused)) *argv[])
+int main(int argc, char *argv[])
 {
 	int count = 0;
 	int toi = atoi(argv[1]);
