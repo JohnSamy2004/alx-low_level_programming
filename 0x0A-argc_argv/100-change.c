@@ -16,6 +16,7 @@ int main(int argc, char *argv[])
 	int toi = atoi(argv[1]);
 	int coins[] = {25, 10, 5, 2, 1};
 	int numcoins = sizeof(coins)/sizeof(coins[0]);
+	int i;
 
 	if (argc != 2)
 	{
@@ -29,7 +30,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	for (int i = 0; i < numcoins; i++)
+	for (i = 0; i < numcoins; i++)
 	{
 		while (toi >= coins[i])
 		{
