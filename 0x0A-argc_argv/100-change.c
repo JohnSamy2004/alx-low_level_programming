@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	int count = 0;
 	int toi = atoi(argv[1]);
 	int coins[] = {25, 10, 5, 2, 1};
-	int numcoins = sizeof(coins)/sizeof(coins[0]);
+	int numcoins = sizeof(coins) / sizeof(coins[0]);
 	int i;
 
 	if (argc != 2)
