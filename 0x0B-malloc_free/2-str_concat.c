@@ -14,13 +14,19 @@ char *str_concat(char *s1, char *s2)
 {
 	char *p;
 	int i1, i2, n, i;
+	
+	if (s1 != NULL)
+	{
+		for (i1 = 0; s1[i1] != '\0'; i1++)
+			;
+	}
+	if (s2 != NULL)
+	{
+		for (i2 = 0; s2[i2] != '\0'; i2++)
+			;
+	}
 
-	for (i1 = 0; s1[i1] != '\0'; i1++)
-		;
-	for (i2 = 0; s2[i2] != '\0'; i2++)
-		;
-
-	p = malloc(sizeof(char) * (i1 + i2));
+	p = malloc(sizeof(char) * (i1 + i2 + 1));
 
 	if (p == NULL)
 		return (NULL);
