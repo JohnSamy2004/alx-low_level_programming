@@ -14,7 +14,7 @@ char *str_concat(char *s1, char *s2)
 {
 	char *p;
 	int i1, i2, n, i;
-	
+
 	if (s1 != NULL)
 	{
 		for (i1 = 0; s1[i1] != '\0'; i1++)
@@ -31,9 +31,9 @@ char *str_concat(char *s1, char *s2)
 	if (p == NULL)
 		return (NULL);
 
-	for (n = 0; n < i1; n++)
+	for (n = 0; s1 != NULL && n < i1; n++)
 		p[n] = s1[n];
-	for (i = 0; i2 > 0; i2--, i++, n++)
+	for (i = 0; s2 != NULL && i2 > 0; i2--, i++, n++)
 		p[n] = s2[i];
 
 	p[n] = '\0';
