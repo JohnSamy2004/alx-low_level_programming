@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include "main.h"
 /**
 * wordCounterRec - count num of words recursively
 * @str: pointer to char
