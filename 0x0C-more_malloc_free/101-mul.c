@@ -23,15 +23,19 @@ int multiplyNumbers(int num1, int num2) {
  */
 
 int main(int argc, char *argv[]) {
-	// Check the number of arguments
+
+	int num1 = atoi(argv[1]);
+	int num2 = atoi(argv[2]);
+
+	int result = multiplyNumbers(num1, num2);
+
+	/*Check the number of arguments*/
 	if (argc != 3) {
 		printf("Error\n");
 		return (98);
 	}
 
 	// Convert command-line arguments to integers
-	int num1 = atoi(argv[1]);
-	int num2 = atoi(argv[2]);
 
 	// Check if arguments are valid positive numbers
 	if (num1 <= 0 || num2 <= 0) {
@@ -39,8 +43,6 @@ int main(int argc, char *argv[]) {
 		return (98);
 	}
 
-	// Multiply the numbers
-	int result = multiplyNumbers(num1, num2);
 
 	// Print the result
 	printf("%d\n", result);
