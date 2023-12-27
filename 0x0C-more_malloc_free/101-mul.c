@@ -35,16 +35,12 @@ int main(int argc, char *argv[]) {
 		return (98);
 	}
 
-	// Convert command-line arguments to integers
-
-	// Check if arguments are valid positive numbers
 	if (num1 <= 0 || num2 <= 0) {
 		printf("Error\n");
 		return (98);
 	}
 
 
-	// Print the result
 	printf("%d\n", result);
 
 	return (0);
