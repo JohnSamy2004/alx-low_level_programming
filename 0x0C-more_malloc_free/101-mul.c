@@ -1,47 +1,66 @@
 #include "main.h"
-
 /**
- * multiplyNumbers - that multiply two numbers
- *
- * @num1: first number
- * @num2: second number
- *
- * @Return: result
- */
+  * _isdigit - tells if the string consists of digits
+  * @argv: pointer to current item in argument
+  * Return: return 0 if all digits, 1 if not all digits.
+  */
+int _isdigit(char *argv)
+{
+	int i;
 
-int multiplyNumbers(int num1, int num2) {
-	return (num1 * num2);
-}
-
-/**
- * main - main code
- *
- * @argc: count
- * @argv: vector
- *
- * Return: 0 on success
- */
-
-int main(int argc, char *argv[]) {
-
-	int num1 = atoi(argv[1]);
-	int num2 = atoi(argv[2]);
-
-	int result = multiplyNumbers(num1, num2);
-
-	/*Check the number of arguments*/
-	if (argc != 3) {
-		printf("Error\n");
-		return (98);
+	i = 0;
+	while (argv[i])
+	{
+		if (argv[i] >= '0' && argv[i] <= '9')
+			i++;
+		else
+			return (1);
 	}
-
-	if (num1 <= 0 || num2 <= 0) {
-		printf("Error\n");
-		return (98);
-	}
-
-
-	printf("%d\n", result);
-
 	return (0);
 }
+/**
+  * _atoi - converts a string of ascii digits to the values they represent
+  * @s: pointer to the source string
+  * Return: value of digits
+  */
+int _atoi(char *s)
+{
+	int i, result;
+
+	i = result = 0;
+	while (s[i])
+	{
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			result *= 10;
+			result += (s[i] - '0');
+		}
+		i++;
+	}
+	return (result);
+}
+/**
+  * main - main function call
+  * @argc: argument count
+  * @argv: 2D array of arguments
+  * Return: return 0 on success, 98 on failure
+  */
+int main(int argc, char *argv[])
+{
+	int i;
+
+	malloc();
+	if (argc != 3)
+	{
+		printf("Error\n");
+		exit(98);
+	}
+	for (i = 1; i < argc; i++)
+	{
+		if (_isdigit(argv[i]))
+		{
+			printf("Error\n");
+			exit(98);
+		}
+	}
+	return (0);
