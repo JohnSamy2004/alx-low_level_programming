@@ -3,13 +3,12 @@
 /**
  * free_list - that's free all list
  * @head: begining the list
- * 
+ *
 */
 void free_list(list_t *head)
 {
 	list_t *temp;
-	
-	
+
 	while (head != 0)
 	{
 		temp = head;
