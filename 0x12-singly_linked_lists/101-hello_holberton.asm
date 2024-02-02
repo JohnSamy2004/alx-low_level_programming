@@ -1,15 +1,17 @@
 section .data
-	message db 'Hello, Holberton', 0
-section .text
-	global _start
-_start:
-	; print the message using printf
-	mov rdi, message	; Load the address of the string info rdi
-	call printf		; Call the printf function
-	; Exit the program
-	mov eax, 60		; System call number for exit
-	xor edi, edi		; Exit code 0
-	syscall			; Invoke the system call
+    hello db "Hello, Holberton", 10, 0   ; 10 is ASCII code for newline, 0 is string terminator
 
-section .extern
-	extern printf		; Declare the printf function from the C library
+section .text
+    global main
+
+    extern printf
+
+main:
+    ; Call printf with the address of the string as an argument
+    mov rdi, hello   ; First argument: address of the string
+    call printf      ; Call printf function
+
+    ; Exit program
+    mov rax, 60      ; syscall number for exit
+    xor rdi, rdi     ; exit status 0
+    syscall
