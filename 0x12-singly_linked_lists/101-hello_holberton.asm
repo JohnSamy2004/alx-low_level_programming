@@ -1,17 +1,17 @@
 section .data
-    hello db "Hello, Holberton", 10, 0   ; 10 is ASCII code for newline, 0 is string terminator
+    format db "Hello, Holberton", 0    ; Define the format string terminated with null character
 
 section .text
-    global main
-
     extern printf
 
-main:
-    ; Call printf with the address of the string as an argument
-    mov rdi, hello   ; First argument: address of the string
-    call printf      ; Call printf function
+global main
 
-    ; Exit program
-    mov rax, 60      ; syscall number for exit
-    xor rdi, rdi     ; exit status 0
-    syscall
+main:
+    ; Call printf to print the formatted string
+    mov rdi, format     ; Set the first argument: address of the format string
+    call printf         ; Call printf function
+
+    ; Exit the program
+    mov rax, 60         ; System call number for exit
+    xor rdi, rdi        ; Exit status 0
+    syscall             ; Invoke the system call
