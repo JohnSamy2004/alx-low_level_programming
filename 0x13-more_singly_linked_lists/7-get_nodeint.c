@@ -8,11 +8,10 @@
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	listint_t *nth = malloc(sizeof(listint_t));
 	int i = 0;
 	listint_t *temp;
 
-	if (!nth)
+	if (!head)
 		return (0);
 
 	temp = head;
@@ -20,9 +19,8 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	{
 		temp = temp->next;
 	}
-	nth = temp->n;
-	nth->next = head;
-	head = nth;
 
-	return (nth);
+	if (i != NULL || !temp)
+		return (0);
+	return (temp);
 }
