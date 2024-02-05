@@ -23,6 +23,8 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	{
 		for (i = 0; i < index - 1 && temp->next != NULL; i++)
 			temp = temp->next;
+		if (temp->next == NULL)
+			return (-1);
 		free_temp = temp->next;
 		temp->next = temp->next->next; /*"OR" free_temp->next*/
 		free(free_temp);
