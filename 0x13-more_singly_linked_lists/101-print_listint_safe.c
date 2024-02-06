@@ -20,7 +20,7 @@ size_t print_listint_safe(const listint_t *head)
 		current = head;
 		while (current)
 		{
-			printf("[%p] %d\n", current->next, current->n);
+			printf("[%p] %d\n", (void *)current->next, current->n);
 			current = current->next;
 			count++;
 		}
