@@ -10,7 +10,8 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	listint_t *current;
+	const listint_t *current;
+	int count = 0;
 
 	if (!head)
 		exit (98);
@@ -21,6 +22,8 @@ size_t print_listint_safe(const listint_t *head)
 		{
 			printf("[%p] %d\n", current->next, current->n);
 			current = current->next;
+			count++;
 		}
 	}
+	return (count);
 }
