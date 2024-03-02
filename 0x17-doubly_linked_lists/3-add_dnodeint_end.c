@@ -8,9 +8,9 @@
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *new = malloc(sizeof(dlistint_t));
-	new->n = n;
-	new->next = NULL;
 	dlistint_t *last;
+	new->next = NULL;
+	new->n = n;
 
 	if (new == NULL)
 		return NULL;
