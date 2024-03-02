@@ -4,16 +4,18 @@
  * @head: pointer to pointer of main head
  * @n: the value
  * Return: the address of the new element
-*/
+ */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *new = malloc(sizeof(dlistint_t));
 	dlistint_t *last;
-	new->next = NULL;
-	new->n = n;
 
 	if (new == NULL)
 		return NULL;
+
+	new->n = n;
+	new->next = NULL;
+
 
 	if (*head == NULL)
 	{
@@ -31,5 +33,5 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		last->next = new;
 		new->prev = last;
 	}
-	return (new);
+	return (new);	
 }
