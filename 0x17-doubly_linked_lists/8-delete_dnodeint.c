@@ -24,8 +24,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		free(tmp);
 		return (1);
 	}
-	if (!tmp)
-		return (-1);
+
 	while (count < index && tmp != NULL)
 	{
 		t1 = tmp;
