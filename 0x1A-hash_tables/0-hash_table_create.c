@@ -30,5 +30,5 @@ hash_table_t *hash_table_create(unsigned long int size)
 		i++;
 	}
 
-	return(hash_table_maked);
+	return (hash_table_maked);
 }
